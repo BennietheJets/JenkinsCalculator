@@ -41,9 +41,7 @@ class Calculator {
      */
     int fibonacciNumberFinder(int n){
         int t1 = 0, t2 = 1;
-
         int sum = 0;
-
         for (int i = 1; i <= n; ++i) {
             sum = t1 + t2;
             t1 = t2;
@@ -64,10 +62,10 @@ class Calculator {
     String intToBinaryNumber(int n){
         String s = "";
         while (n > 0) {
-            s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
+            s = ( (n % 2 ) == 0 ? "0" : "1") + s;
             n = n / 2;
         }
-        return s;
+        return java.lang.Integer.toBinaryString(n);
     }
 
     /*
@@ -83,6 +81,4 @@ class Calculator {
         String createdID = uniqueKey + n;
         return createdID;
     }
-
-
 }
