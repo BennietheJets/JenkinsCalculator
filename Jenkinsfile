@@ -56,7 +56,7 @@ pipeline {
         stage ('Deploy Image') {
             steps {
                 script {
-                    docker.withRegistry('jenkinscalc', registryCredential) {
+                    docker.withRegistry('', registryCredential) {
                         dockerImage.push()
                     }
                 }
@@ -74,6 +74,5 @@ pipeline {
     	  subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
     	  body: "Something is wrong with ${env.BUILD_URL}"
     	}
-
     }
 }
