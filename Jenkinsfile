@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        registry = "Your_Dockerhub_Username/Your_Dockerhub_Repository_Name"
+        registry = "mrbenjammin95/jenkinscalc"
         registryCredential = 'dockerhub'
         dockerImage=''
     }
