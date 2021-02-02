@@ -41,7 +41,7 @@ class Calculator {
      */
     int fibonacciNumberFinder(int n){
         int t1 = 0, t2 = 1;
-        int sum = 0;
+        int sum;
         for (int i = 1; i <= n; ++i) {
             sum = t1 + t2;
             t1 = t2;
