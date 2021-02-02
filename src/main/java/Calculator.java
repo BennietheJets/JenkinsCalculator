@@ -60,8 +60,7 @@ class Calculator {
      */
     String intToBinaryNumber(int n){
         String s = "";
-        while (n > 0)
-        {
+        while (n > 0) {
             s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
             n = n / 2;
         }
@@ -77,8 +76,9 @@ class Calculator {
     if you run this function twice with the same String input, it must return 2 unique String IDs
      */
     String createUniqueID(String n){
-
-        return null;
+        UUID uniqueKey = UUID.randomUUID();
+        String createdID = uniqueKey + n;
+        return createdID;
     }
 
 
