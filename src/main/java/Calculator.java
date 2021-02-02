@@ -60,11 +60,6 @@ class Calculator {
     if int a = 16 then this method returns: 10000
      */
     String intToBinaryNumber(int n){
-        String s = "";
-        while (n > 0) {
-            s = ( (n % 2 ) == 0 ? "0" : "1") + s;
-            n = n / 2;
-        }
         return java.lang.Integer.toBinaryString(n);
     }
 
