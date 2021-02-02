@@ -56,7 +56,7 @@ pipeline {
         stage ('Deploy Image') {
             steps {
                 script {
-                    docker.withRegistry('', registryCredential) {
+                    docker.withRegistry('jenkinscalc', registryCredential) {
                         dockerImage.push()
                     }
                 }
